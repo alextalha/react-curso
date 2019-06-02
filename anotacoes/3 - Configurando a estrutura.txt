@@ -1,0 +1,34 @@
+yarn  -v => gerenciador de pacotes do facebook, tende a ser mais rápido que facebook
+
+mkdir modulo1
+npm init -y
+
+
+npm install react react-dom 
+npm install -D @babel/core @babel/preset-env @babel/preset-react babel-loader webpack webpack-cli
+
+
+package-lock => cache do npm 
+
+
+criar um arquivo .babelrc
+arquivo para transpilar o javascript e o react 
+
+criar o webpack.config.js na raiz 
+
+
+webpack, programa para automatizar o processo 
+
+====================================================================================
+
+
+.babelrc. => arquivo de config do babel apontando os modulos que ele vai utilizar
+
+src/index.js => entry point da aplicação arquivo que o babel vai olhar ]
+public/bundle.js => arquivo de saida da transpilação 
+
+gerenciador webpack
+
+
+
+

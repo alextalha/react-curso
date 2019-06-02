@@ -1,0 +1,66 @@
+"React"
+
+Pioneiro na componentização Componentização 
+Biblioteca que nos ajuda a criar interfaces 
+react sozinho não tem poder de persistir dados 
+utiliza modelo de componentização 
+Camada V de MVC
+
+
+React 
+ - ReactDom
+
+ ReactJS
+
+ React Native
+
+
+ JSX  ( Javascript Xhtml do React)
+  - Html no JSX
+  - Apenas JSX
+  - Traspilado
+  - Babel 
+
+
+  ex: 
+
+  render() {
+      return (
+          < href="exemplo.html">
+            Hello Rocketset
+           </a>
+      )
+  }
+
+
+Traspilado para
+
+render(){
+    return(
+        React.createElement(
+            'a',
+            { href: 'exemplo' },
+            'Hello RocketSeat'
+        )
+
+    )
+}
+
+
+
+
+##########Babel e webpack #############
+
+
+- Navegadores vs Ecmascript
+- Babel transpila o código
+- Webpack automatiza o processo 
+
+
+
+
+
+
+
+
+

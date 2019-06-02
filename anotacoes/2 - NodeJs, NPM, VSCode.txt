@@ -1,0 +1,10 @@
+nodejs.org => site para baixar o nodejs
+chocolaatey => gerenciador de pacotes para o windows
+brew.sh => gerenciador de pacotes para o mac
+
+Editor 
+
+Visual Studio Code 
+
+node -v
+npm -v
