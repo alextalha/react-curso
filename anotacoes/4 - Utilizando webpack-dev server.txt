@@ -1,0 +1,19 @@
+
+
+
+criar um arquivo dentro da pasta public chamada index.html
+
+dentro do index instanciar a bundle.js
+
+
+instalar
+npm install -D webpack-dev-server
+
+
+webpackconfig 
+
+adicionar um novo no devserver 
+
+devServer: {
+    contentBase:  path.resolve(__dirname,"public")
+}
