@@ -12,6 +12,7 @@ class App extends Component {
     handleClick() {
         alert('Handle Click')
     }
+
     render() {
         return (
             <Fragment>
