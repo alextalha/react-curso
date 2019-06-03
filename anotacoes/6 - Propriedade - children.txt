@@ -1,0 +1,23 @@
+Trabalhando com propriedades 
+
+quando instanciamos o component dentro de outro . passamos como propriedades para popular no principal
+
+
+handleClick(){
+    alert('Botão clicado')
+}
+
+<Button onClick={this.handleClick}>Enviar</Button>
+
+
+this.props.children => Utilizamos quando não passamos parametro 
+ex: 
+
+<Button>Enviar</Button>
+
+ai pra dentro do componentes passamos 
+
+
+ render() {
+        return  <a>{this.props.children}</a>
+    }

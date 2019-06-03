@@ -1,22 +1,25 @@
-import  React , { Component, Fragment } from "react"
-import  { render }  from "react-dom"
-
+import React, { Component, Fragment } from "react"
+import { render } from "react-dom"
 
 class Button extends Component {
     render() {
-        return <a href="#">Salvar</a>
+        return <a onClick={this.props.onClick} href="#">{this.props.title}</a>
     }
 }
 
 class App extends Component {
-   render() {
-       return(
+
+    handleClick() {
+        alert('Handle Click')
+    }
+    render() {
+        return (
             <Fragment>
-                <h1>Hello World </h1>
-                <Button />
+                <h1>RocketSeat </h1>
+                <Button onClick={this.handleClick} title="Enviar" />
             </Fragment>
-        );
+        )
     }
 }
 
-render(<App /> , document.getElementById("app"))
+render(<App />, document.getElementById("app"))
