@@ -1,19 +1,7 @@
+Componente é uma mistura de codigo de visualização,
+scripts em javascript e css
 
+criamos components para poder importar em outros 
 
+o render ao final é o principal da aplicação 
 
-criar um arquivo dentro da pasta public chamada index.html
-
-dentro do index instanciar a bundle.js
-
-
-instalar
-npm install -D webpack-dev-server
-
-
-webpackconfig 
-
-adicionar um novo no devserver 
-
-devServer: {
-    contentBase:  path.resolve(__dirname,"public")
-}
