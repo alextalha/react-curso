@@ -1,12 +1,20 @@
 import React, { Component, Fragment } from "react"
 import { render } from "react-dom"
-
+import PropTypes from 'prop-types'
 class Button extends Component {
     render() {
-        return <a onClick={this.props.onClick} href="#">{this.props.title}</a>
+        return <a onClick={this.props.onClick} href="#">{this.props.children}</a>
     }
 }
 
+Button.defaultProps = {
+    children: "Salvar"
+}
+
+Button.propTypes = {
+    onClick: PropTypes.func.isRequired,
+    children: PropTypes.string
+}
 class App extends Component {
 
     handleClick() {
@@ -17,7 +25,9 @@ class App extends Component {
         return (
             <Fragment>
                 <h1>RocketSeat </h1>
-                <Button onClick={this.handleClick} title="Enviar" />
+                <Button onClick={() => { alert('teste') }}></Button>
+                <br />
+                <Button onClick={this.handleClick}>Enviar</Button>
             </Fragment>
         )
     }

@@ -1,0 +1,22 @@
+
+Propriedades padrão
+
+
+npm install prop-types
+
+
+para passar um padrão ex:
+
+#Quando não passar nada ele já vai entender este valor defaut par ao children
+
+Component.defaultProps = {
+    children: "Salvar"
+};
+
+
+// forma para tipar/validar os parametros
+Component.propTypes = {
+  onClick: PropTypes.func.isRequired,
+  children : PropTypes.string
+}
+
